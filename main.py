@@ -17,9 +17,11 @@ if os.path.exists("test.html1"):
 else:
     URL = "https://talos.stuy.edu/auth/login/"
 
-    print("""Please enter your Talos login information. 
+    print("""
+    Please enter your Talos login information. 
     This information is not saved or sent anywhere other than talos.stuy.edu.
-    This script is open source and can be found at """)
+    This script is open source and can be found at https://github.com/Dyredhead/Talos-Schedule-Extracter
+    """)
     USERNAME = input("E-mail: ")
     PASSWORD = input("Password: ")
     CSRF = ""
