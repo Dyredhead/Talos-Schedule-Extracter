@@ -12,7 +12,12 @@ git clone git@github.com:Dyredhead/Talos-Schedule-Extracter.git
 cd Talos-Schedule-Extracter
 ```
 
-3. run the script: 
+3. Install any dependinces
+```
+pip install -r requirements.txt
+```
+
+4. Run the script: 
 ```
 python main.py
 ```
