@@ -11,7 +11,7 @@ c = pycurl.Curl()
 LAST_PERIOD = 10
 
 html = ""
-if os.path.exists("test.html1"):
+if os.path.exists("test.html"):
     with open("test.html", "r") as f:
         html = f.read()
 else:
