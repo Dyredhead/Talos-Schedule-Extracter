@@ -111,6 +111,9 @@ for row in schedule:
     row[fields.index("Cycle")] = "\"[" + ", ".join(
         [i for i in list(row[fields.index("Cycle")]) if i != "-"]) + "]\""
 
+# sort schedule by period
+schedule.sort(key=lambda row: int(row[0]))    
+    
 # export to csv
 with open("schedule.csv", "w") as f:
     f.write(",".join(fields))
